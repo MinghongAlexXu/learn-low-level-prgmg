@@ -10,6 +10,10 @@ GNU C(++) compiler for the arm(el|hf) architecture:
 
 [exit (system call)](https://en.wikipedia.org/wiki/Exit_(system_call))
 
+[Linux system call table](https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#arm-32_bit_EABI)
+
 xxd produces a hexadecimal dump of a file.
 
 [use vim as a hex editor](https://english.stackexchange.com/a/51955)
+
+[some refs](https://johannst.github.io/notes/arch/armv7.html#references)
