@@ -4,10 +4,10 @@
 # make clean  # removes the object and executable
 
 helloworld.elf: helloworld.o
-	arm-linux-gnueabi-gcc helloworld.o -o helloworld.elf -nostdlib
+	arm-linux-gnueabi-gcc -o helloworld.elf -nostdlib helloworld.o
 
 helloworld.o: helloworld.asm
-	arm-linux-gnueabi-as helloworld.asm -o helloworld.o
+	arm-linux-gnueabi-as -o helloworld.o -g helloworld.asm
 
 run: helloworld.elf
 	qemu-arm ./helloworld.elf
